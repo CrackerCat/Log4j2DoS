@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="MyApp" packages="">
+    <!--test-->
+    <appenders>
+        <console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%msg{lookups}%n"/>
+        </console>
+    </appenders>
+    <!--cve-->
+<!--    <appenders>-->
+<!--        <console name="STDOUT" target="SYSTEM_OUT">-->
+<!--            <PatternLayout>-->
+<!--                <pattern>%d %p %c{1.} [%t] $${ctx:loginId} %m%n</pattern>-->
+<!--            </PatternLayout>-->
+<!--        </console>-->
+<!--    </appenders>-->
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>
